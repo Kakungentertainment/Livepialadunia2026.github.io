@@ -119,7 +119,7 @@
         .player-wrapper {
             position: relative;
             width: 100%;
-            padding-top: 50%; /* Dikunci ke 50% untuk menekan keluar sisa garis bawah iframe */
+            padding-top: 56%; /* Diubah ke 56% agar rasio box memanjang ke atas secara vertikal */
             border-radius: 6px;
             overflow: hidden;
             background-color: #000000 !important; 
@@ -139,7 +139,7 @@
 
         .iframe-crop-container iframe {
             position: absolute;
-            top: -525px;  /* Diturunkan 4px dari -522px agar pas memotong pinggiran bawah video asli */
+            top: -261px;  /* Diubah dari -280px agar bingkai membuka area atas lebih lebar (Skor Terlihat) */
             left: -20px;  
             width: calc(100% + 40px);
             height: calc(100% + 750px); 
@@ -341,4 +341,4 @@
     csBtn.addEventListener('mousedown', dragStart); document.addEventListener('mousemove', dragMove); document.addEventListener('mouseup', dragEnd); csBtn.addEventListener('touchstart', dragStart, { passive: true }); document.addEventListener('touchmove', dragMove, { passive: false }); document.addEventListener('touchend', dragEnd);
 </script>
 </body>
-</html>
+    </html>
